@@ -1,8 +1,9 @@
-openai
 pandas
 python-dotenv
 langchain
 langchain-community
 langchain-openai
+langchain-groq
+langchain-huggingface
 chromadb
 sentence-transformers
