@@ -24,10 +24,11 @@ else:
 def ingest_support_data():
     # Attempt to find the correct data directory
     # If you are in D:\hackerank, and the files are in the subfolder:
+    # Inside code/ingest.py
     possible_paths = [
-        "data",
-        "hackerrank-orchestrate-may26/data",
-        "hackerrank-orchestrate-may26/code/../data"
+        "../data",                       # Go up to find the data folder
+        "../../data",                    # Go up twice just in case
+        "data"                           # Check local if they moved it
     ]
     
     base_dir = None

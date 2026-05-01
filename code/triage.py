@@ -10,7 +10,8 @@ load_dotenv()
 
 # Initialize our components
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-db = Chroma(persist_directory="../chroma_db", embedding_function=embeddings)
+# Inside code/triage.py
+db = Chroma(persist_directory="chroma_db", embedding_function=embeddings)
 
 
 llm = ChatGroq(model_name="llama-3.3-70b-versatile", temperature=0)

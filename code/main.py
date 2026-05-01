@@ -4,14 +4,6 @@ from dotenv import load_dotenv
 
 import sys
 import os
-
-# Get the path to the 'src' directory relative to this script
-# Since main.py is in 'code' and triage is in 'src', we go up one level then into 'src'
-current_dir = os.path.dirname(os.path.realpath(__file__))
-src_path = os.path.join(current_dir, '..', '..', 'hackerrank-orchestrate-may26/src')
-sys.path.append(os.path.abspath(src_path))
-
-# Now this should work
 from triage import process_ticket
 
 load_dotenv()
